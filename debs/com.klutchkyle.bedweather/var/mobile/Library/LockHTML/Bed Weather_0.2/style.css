@@ -22,11 +22,15 @@
 
 }
 #container {
-    padding-top: 10%;
+    padding-top: 30%;
+    height: 100%;
+    width: 100%;
 
+    
 }
 
 #greeting {
+    
     text-align: center;
     color: white;
     font-family: "SF";
@@ -34,28 +38,23 @@
     font-size: 150px;
 }
 
-#iconBox {
-    position: releative;
-    Width: 100%;
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.flex-container > div {
+    margin: -10px;
+    font-size: 200px;
 
 }
 
 #weatherIcon {
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
-    width: auto;
-    height: 20%;
-    left:2%;
 }
 
 #temp {
-    vertical-align: middle;
     font-family: "SF";
-    padding: 10px;
-    font-size: 200px;
     color: white;
-
 }
 
 #naturalWeather {

@@ -1,6 +1,6 @@
 Package: com.klutchkyle.bedweather
 Name: Bed-Weather
-Version: 0.1
+Version: 0.2
 Architecture: iphoneos-arm
 Description: iOS 12 Bedtime Greeting XenHTML Widget
 Maintainer: KlutchKyle <kylethelegendmc@gmail.com

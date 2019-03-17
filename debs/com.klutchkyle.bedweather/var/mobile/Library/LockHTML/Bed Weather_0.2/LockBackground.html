@@ -2,7 +2,7 @@
     <meta content="user-scalable=no"/>
     <meta charset=UTF-8>
     <title>BedWeather</title>
-    <meta name="viewport" content="initial-scale=1", user-scalable=0>
+    <meta name="viewport", content="width=1280" content="initial-scale=1">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" charset="utf-8" src="options.js"></script>
@@ -13,7 +13,7 @@
  </head>
 
 <body id="body" onload="startTime(), gSet()" background="/imgs/maxresdefault.jpg">
-  
+ <div id="space"></div> 
     <div class="wrapper"> 
         <div id="hrsDiv"></div>
         <div id="m"></div>
@@ -22,12 +22,10 @@
         <div id="container">                
             <div id="greeting">Good Morning*</div>
             <div id="naturalWeather">Natural Weather</div>
-            <center><div id="iconBox">
-                <img id="weatherIcon" src="imgs/Clear.png"></img>
-                <span id="temp">69°</span>
-
+        <div class="flex-container">
+                <div><img id="weatherIcon" src="imgs/Clear.png"></img></div>
+                <div id="temp">69°</div>
             </div>
-        </center>
         </div>            
 
 
