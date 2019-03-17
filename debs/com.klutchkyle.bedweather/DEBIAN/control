@@ -1,0 +1,10 @@
+Package: com.klutchkyle.bedweather
+Name: Bed-Weather
+Version: 0.1
+Architecture: iphoneos-arm
+Description: iOS 12 Bedtime Greeting XenHTML Widget
+Maintainer: KlutchKyle <kylethelegendmc@gmail.com
+Depends: firmware (>= 10.0), com.matchstic.xenhtml
+Author: KlutchKyle <kylethelegendmc@gmail.com>
+Section: Widgets
+Tag: purpose::widgets
