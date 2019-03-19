@@ -1,0 +1,58 @@
+<html>
+    <meta content="user-scalable=no"/>
+    <meta charset=UTF-8>
+    <title>BedWeather</title>
+    <meta name="viewport", content="width=1280" content="initial-scale=1">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="options.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/main.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="scripts/jquery.min.js"></script>
+ 
+ </head>
+
+<body id="body" onload="gSet()" background="/imgs/maxresdefault.jpg">
+ <div id="space"></div> 
+
+    <div class="wrapper"> 
+        <div id="hrsDiv"></div>
+        <div id="condition"></div>
+        <div id="container">                
+            <div id="greeting">Good Morning*</div>
+            <div id="naturalWeather">Natural Weather</div>
+        <div class="flex-container">
+                <div><img id="weatherIcon" src="imgs/32.png" ></img></div>
+                <div id="temp">69°</div>
+            </div>
+        </div>            
+
+
+
+    </div>
+<script type="text/javascript">
+    var siteWidth = 1528;
+    var scale = screen.width / siteWidth
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');  
+    document.getElementById("body").style = "-webkit-animation: fadein 0.2s linear 1 normal; -webkit-animation-fill-mode: forwards";
+
+
+    function gSet() {
+        var d = new Date();
+        var hrs = d.getHours();
+    console.log("hrs: " + hrs);
+    if (hrs >= 6 && hrs < 12) { //Morning
+        document.getElementById('greeting').innerHTML = "Good Morning";
+    } else if (hrs >= 12 && hrs < 17) { //Afternoon
+        document.getElementById('greeting').innerHTML = "Good Afternoon";
+    } else if (hrs >= 17 && hrs < 20) { //Evening
+        document.getElementById('greeting').innerHTML = "Good Evening";
+    } else if (hrs >= 20 || hrs == 0) { //Night
+        document.getElementById('greeting').innerHTML = "Good Night";
+    } else if (hrs < 6){//Night
+        document.getElementById('greeting').innerHTML = "Good Night";
+    }
+}
+
+</script>
+</body>
+</html>
